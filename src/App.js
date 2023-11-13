@@ -35,11 +35,11 @@ function App() {
   const extraHours = calculateTotalHours() - targetHours;
 
   return (
-    <Container style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "10px", color: "#6a5acd" }}>
-      <h1 className="mt-5">Programador de Horas</h1>
+    <Container style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "10px", marginTop: "20px" }}>
+      <h1 className="mt-5" style={{ color: "#6a5acd" }}>Programador de Horas</h1>
       <Form className="mt-3">
         <Form.Group controlId="targetHours">
-          <Form.Label>Escolha o alvo de horas para o mês:</Form.Label>
+          <Form.Label style={{ color: "#6a5acd" }}>Escolha o alvo de horas para o mês:</Form.Label>
           <Form.Control
             as="select"
             value={targetHours}
@@ -51,7 +51,7 @@ function App() {
           </Form.Control>
         </Form.Group>
       </Form>
-      <Table bordered className="mt-3" style={{ backgroundColor: "#fff", borderRadius: "10px" }}>
+      <Table bordered responsive className="mt-3" style={{ backgroundColor: "#fff", borderRadius: "10px" }}>
         <thead>
           <tr>
             <th style={{ backgroundColor: "#6a5acd", color: "#fff", borderTopLeftRadius: "10px" }}>Dia</th>
@@ -76,10 +76,10 @@ function App() {
       </Table>
       <Row className="mt-3">
         <Col>
-          <p style={{ fontSize: "18px", fontWeight: "bold" }}>Total de horas por semana: {calculateTotalHours() / 4}</p>
-          <p style={{ fontSize: "18px", fontWeight: "bold" }}>Total de horas no mês: {calculateTotalHours()}</p>
-          {extraHours > 0 && <p style={{ fontSize: "18px", fontWeight: "bold" }}>Você atingiu o alvo e passou {extraHours} horas.</p>}
-          {hoursLeft > 0 && <p style={{ fontSize: "18px", fontWeight: "bold" }}>Faltam {hoursLeft} horas para atingir o alvo.</p>}
+          <p style={{ fontSize: "18px", fontWeight: "bold", color: "#6a5acd" }}>Total de horas por semana: {calculateTotalHours() / 4}</p>
+          <p style={{ fontSize: "18px", fontWeight: "bold", color: "#6a5acd" }}>Total de horas no mês: {calculateTotalHours()}</p>
+          {extraHours > 0 && <p style={{ fontSize: "18px", fontWeight: "bold", color: "#6a5acd" }}>Você atingirá o alvo com {extraHours} horas de sobra.</p>}
+          {hoursLeft > 0 && <p style={{ fontSize: "18px", fontWeight: "bold", color: "#6a5acd" }}>Faltam {hoursLeft} horas para atingir o alvo.</p>}
         </Col>
       </Row>
     </Container>
