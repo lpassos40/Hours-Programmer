@@ -52,10 +52,10 @@ function App() {
         </Form.Group>
       </Form>
       <Table bordered responsive className="mt-3" style={{ backgroundColor: "#fff", borderRadius: "10px" }}>
-        <thead>
+        <thead style={{  borderRadius: "10px" }}>
           <tr>
-            <th style={{ backgroundColor: "#6a5acd", color: "#fff", borderTopLeftRadius: "10px" }}>Dia</th>
-            <th style={{ backgroundColor: "#6a5acd", color: "#fff", borderTopRightRadius: "10px" }}>Horas</th>
+            <th style={{ backgroundColor: "#6a5acd", color: "#fff",  }}>Dia</th>
+            <th style={{ backgroundColor: "#6a5acd", color: "#fff",  }}>Horas</th>
           </tr>
         </thead>
         <tbody>
