@@ -36,7 +36,7 @@ function App() {
 
   return (
     <Container style={{ backgroundColor: "#fff", padding: "20px", borderRadius: "10px", color: "#6a5acd" }}>
-      <h1 className="mt-5">Horas Trabalhadas</h1>
+      <h1 className="mt-5">Programador de Horas</h1>
       <Form className="mt-3">
         <Form.Group controlId="targetHours">
           <Form.Label>Escolha o alvo de horas para o mês:</Form.Label>
